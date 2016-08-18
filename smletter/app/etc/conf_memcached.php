@@ -1,0 +1,9 @@
+<?php
+
+define('MEMCACHED_SERVER_HOST1', '172.23.179.35');
+
+define('MEMCACHED_SERVER_PORT1', 11211);
+
+define('MEMCACHED_SERVER_EXPIRED', 86400);
+
+?>

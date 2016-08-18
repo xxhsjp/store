@@ -1,0 +1,80 @@
+<!-- ---------------------------------------------account manager start ----------------------------------------- -->
+
+<div>
+<h2 class="sub-header">
+<div class="row">
+  <div class="col-lg-5">
+{$sent_letters}
+  </div><!-- /.col-lg-6 -->
+
+  
+</div><!-- /.row -->
+</h2>
+  <table class="table table-striped" style="table-layout:fixed">
+    <thead>
+      <tr>
+        <th>{$sent_recipients}</th>
+        <th>{$sent_subject}</th>
+        <th>{$sent_date}</th>
+      </tr>
+    </thead>
+    <tbody id="sent_tb">
+    </tbody>
+  </table>
+	<div class="task-nav-page-container">
+		<nav class="task-nav-page">
+		  <ul class="pagination" id="sent_nav_page">
+		  </ul>
+		</nav>
+	</div>  
+
+
+</div>
+<!-- ---------------------------------------------account manager end ----------------------------------------- -->
+
+<!---------------------------------------------- order mamager start------------------------------------------- -->
+
+<div style="display:none">
+	<h2 class="sub-header">
+	<small class="pull-right">
+	<button type="button" class="btn btn-sm" id="sent_return">
+	  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> {$sent_return}
+	</button>
+	</small>
+		<label class="sent_subject"></label>
+	</h2>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+  <div class="row">
+    <div class="col-xs-9 col-sm-6">{$sent_date}<span>2016/04/11</span></div>
+    <!-- div class="col-xs-3 col-sm-2">{$sent_view}<a href="javascript:void(0);">{$sent_archive}</a></div-->
+  </div>
+  </div>
+  
+	<div class="panel panel-body">
+	  <div class="row">
+		<div class="col-xs-4 col-sm-3">{$sent_open_total}</div>
+		<div class="col-xs-4 col-sm-3">{$sent_unique_open}</div>
+		<div class="col-xs-4 col-sm-3">{$sent_total_click}</div>
+		<div class="col-xs-4 col-sm-3">{$sent_unique_click}</div>
+	  </div>
+	  <div class="row">
+	  	<div class="col-xs-4 col-sm-3"><strong>2</strong></div>
+		<div class="col-xs-4 col-sm-3"><strong>1</strong></div>
+		<div class="col-xs-4 col-sm-3"><strong>3</strong></div>
+		<div class="col-xs-4 col-sm-3"><strong>1</strong></div>
+	  </div>
+  </div>
+	  <!-- mail content -->
+	 <div><strong>{$sent_discussed}:<span class="sent_subject"></span></strong></div>
+	 <div id="sent_content">
+	 </div>
+</div>
+
+
+
+</div>
+
+
+<script src="web/js/user/sent.js?v=100000"></script>

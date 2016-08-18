@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="__web_index__">
+    <meta name="author" content="">
+	
+    <title>{$g_project_name}</title>
+	<link type="image/png" href="web/skin/{$g_skin}/image/favicon.ico?v=100001" rel="shortcut icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="web/skin/{$g_skin}/bs/css/bootstrap.css?v=100000" rel="stylesheet">
+    <link href="web/skin/{$g_skin}/bs/css/font-awesome.css?v=100000" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="web/skin/{$g_skin}/main.css?v=100000" rel="stylesheet">
+   
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="web/js/lib/datetimepicker/css/bootstrap-datetimepicker.min.css?v=100000" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="logo"><img src="web/skin/cool/image/logo-1.png"></img></div>
+       
+        <div class="navbar-header">
+         <button type="button" class="navbar-toggle" id="logo" >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         </div>
+       <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li id="main_dropmenu"><a href="javascript:void(0);" class="dropdown-toggle"  data-toggle="dropdown">{$account}<i class="fa fa-angle-down"></i></a>
+                <div class="user-dian dropdown-menu" >
+	            <!-- h2>{$profile_info_available}<strong id="main_free_count" class="font-red">10000</strong></h2 -->
+	            <P>{$profile_info_expired}<span id="main_expired">2017/3/15</span></P>
+	           </div>
+            </li>
+            <li class="l-h50">|</li>
+            <li><a href="#" target="_blank">{$profile_info_help}</a></li >
+            <li class="l-h50">|</li>
+            <li><a href="logout.php" class="transition">{$nav_logout}</a></li>
+            
+           </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+      <table width="100%" border="0" cellpadding="0" celllspacing="0"><tr><td  class="td-768-no">
+        <div id="sidebar" class="col-sm-3 col-md-2 hidden-xs sidebar">
+          <!-- ul class="nav nav-main">
+            <li class="main-li"><a href="#" lnav="nav_service"><i class="fa fa-angle-down"></i>{$profile_info_service}</a></li>
+          </ul -->
+          <ul class="nav nav-sidebar" id="nav_service">
+            <li class="active"><a href="#compose" vname="compose"><i class="fa fa-envelope-o"></i>{$view_compose}</a></li>
+            <li><a href="#sent" vname="sent"><i class="fa fa-clone"></i>{$view_sent}</a></li>
+            <li><a href="#replies" vname="replies"><i class="fa fa-paper-plane-o"></i>{$view_replies}</a></li>
+            <li><a href="#drafts" vname="drafts"><i class="fa fa-unlink"></i>{$view_drafts}</a></li>
+            <li><a href="#subscribers" vname="subscribers"><span class="glyphicon glyphicon-user"></span>{$view_subscriber}</a></li>
+            <li><a href="#share" vname="share"><span class="glyphicon glyphicon-user"></span>{$view_share}</a></li>
+           </ul>
+           <ul class="nav nav-main">
+            <li class="main-li"><a href="#" lnav="nav_setting"><i class="fa fa-angle-down"></i>{$profile_info_usercenter}</a></li>
+           </ul>
+           <ul class="nav nav-sidebar" id="nav_setting">
+            <li><a href="#user_profile" vname="user_profile"><i class="fa fa-gear"></i>{$view_user_profile}</a></li>  
+			<li><a href="#user_design" vname="user_design"><i class="fa fa-gear"></i>{$view_user_design}</a></li>  
+			<li><a href="#user_setting" vname="user_setting"><i class="fa fa-gear"></i>{$view_user_setting}</a></li>  
+           </ul>
+        </div>
+        </td><td>
+        <div id="content_area" class="col-sm-9 col-md-10  col-xs-12 main">
+        </div>
+        </td></tr></table>
+      </div>
+    </div>
+    
+	<div id="modal_info" class="modal" tabindex="-1" role="dialog" >
+	  <div class="modal-dialog modal-sm">
+	    <div id="modal_info_content" class="modal-content">
+	    </div>
+	  </div>
+	</div>
+	
+	<div id="modal_confirm" class="modal" tabindex="-1" role="dialog" >
+	  <div class="modal-dialog modal-sm">
+	    <div id="modal_confirm_content" class="modal-content">
+	    	<div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title"></h4>
+	      	</div>
+		    <div class="modal-body">
+		    </div>
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-primary">{$view_confirm_yes}</button>
+		        <button type="button" class="btn btn-default" data-dismiss="modal">{$view_confirm_no}</button>
+		    </div>
+	    </div>
+	  </div>
+	</div>
+	
+	<span id="media_test" class="hidden-xs"></span>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="web/js/lib/jquery-1.11.3.min.js"></script>
+	<script src="web/js/lib/jquery.form.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="web/js/lib/bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+	 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="web/js/lib/bootstrap-3.3.5/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  	<script src="web/js/lib/chart.min.js"></script>
+  	<script src="web/js/common/util.js?v=100000"></script>
+  	<script src="web/js/common/Page.js?v=100000"></script>
+	<script src="web/js/main/frame.js?v=100000"></script>
+	<script src="web/js/main/main.js?v=100000"></script>
+  	<script type="text/javascript">var Lang = {$lang_json},__account__ = "{$account}";</script>
+  	<script src="web/js/lib/datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+  	<script src="web/js/lib/datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+  	<script src="web/js/common/md.js?v=100000"></script>
+  	<script src="web/js/lib/ckeditor/ckeditor.js?v=100000"  type="text/javascript"></script>
+  	<script src="web/js/lib/ckeditor/config.js?v=100000"  type="text/javascript"></script>
+  </body>
+</html>

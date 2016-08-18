@@ -1,0 +1,32 @@
+<div>
+	<div id="tplList">
+		<h2 class="sub-header">{$template_tpl_audit}
+			<p class="pull-right">
+				<button type="button" class="btn btn-default btn-sm" id="manageReferash">
+		  			<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> {$template_referash}
+				</button>
+			</p>
+		</h2>
+	
+ 		<table class="table table-striped" style="table-layout:fixed">
+    		<thead>
+      			<tr>
+        			<th>{$template_name}</th>
+        			<th class="th-width-s">{$template_subject}</th>
+        			<th class="th-width-s">{$template_account}</th>
+        			<th class="th-width-xs">{$template_status}</th>
+        			<th class="th-width-m">{$template_reason_description}</th>
+        			<th class="th-width-s">{$template_build_time}</th>
+        			<th class="th-width-xs">{$template_option}</th>
+      			</tr>
+   			</thead>
+    		<tbody id="tplManage_tb"></tbody>
+  		</table>
+  		
+  		<nav>
+  			<ul id="tplPageBar" class="pagination"></ul>
+  		</nav>
+	</div><!-- list -->
+</div><!-- main -->
+
+<script src="web/js/admin/tpl_manage.js?v=100000"></script>

@@ -1,0 +1,897 @@
+2016-04-11 13:46:42 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 13:46:42 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 13:46:42 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-11 13:46:42 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-11 13:46:42 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:46:42 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-11 13:46:42 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:47:18 -- DEBUG -- LoginManager::logout@75 -- xul -- 1
+2016-04-11 13:50:07 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 13:50:07 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 13:50:07 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-11 13:50:07 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-11 13:50:07 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:50:07 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-11 13:50:07 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:50:25 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:50:26 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:50:27 -- DEBUG -- LoginManager::logout@75 -- xul -- 1
+2016-04-11 13:51:16 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 13:51:16 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 13:51:16 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-11 13:51:16 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-11 13:51:16 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:16 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-11 13:51:16 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:20 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:20 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:30 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:31 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:32 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:32 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:33 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:38 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:51:38 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:53:33 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:53:33 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:53:34 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 13:53:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 14:05:40 -- DEBUG -- LoginManager::logout@75 -- xul -- 1
+2016-04-11 14:06:12 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 14:06:12 -- DEBUG -- AccountInfoManager::__construct@9 -- xul2
+2016-04-11 14:06:12 -- DEBUG -- AccountInfoManager::register@23 -- xul2 -- INSERT INTO account (account, password,status,register_time) values (?,?,?, unix_timestamp()) 
+2016-04-11 14:06:12 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: INSERT INTO account (account, password,status,register_time) values (?,?,?, unix_timestamp())  params:["xul2","96e79218965eb72c92a549dd5a330112",1]
+2016-04-11 14:06:12 -- DEBUG -- AccountInfoManager::register@25 -- xul2 -- 1
+2016-04-11 14:06:16 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 14:06:16 -- DEBUG -- AccountInfoManager::__construct@9 -- xul2
+2016-04-11 14:06:16 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul2","96e79218965eb72c92a549dd5a330112"]
+2016-04-11 14:06:16 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul2","lang":null,"skin":null,"id":"5","type":"0","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"1460354765"} -- null
+2016-04-11 14:06:16 -- DEBUG -- LoginManager::isLogin@86 -- xul2 -- 1
+2016-04-11 14:06:16 -- DEBUG -- LoginManager::get_user_type@66 -- xul2 -- 
+2016-04-11 14:06:16 -- DEBUG -- LoginManager::isLogin@86 -- xul2 -- 1
+2016-04-11 14:06:18 -- DEBUG -- LoginManager::isLogin@86 -- xul2 -- 1
+2016-04-11 14:06:21 -- DEBUG -- LoginManager::logout@75 -- xul2 -- 1
+2016-04-11 14:06:38 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 14:06:38 -- DEBUG -- AccountInfoManager::__construct@9 -- xul2
+2016-04-11 14:06:38 -- DEBUG -- AccountInfoManager::register@23 -- xul2 -- INSERT INTO account (account, password,status,register_time) values (?,?,?, unix_timestamp()) 
+2016-04-11 14:06:38 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: INSERT INTO account (account, password,status,register_time) values (?,?,?, unix_timestamp())  params:["xul2","96e79218965eb72c92a549dd5a330112",1]
+2016-04-11 14:06:38 -- DEBUG -- AccountInfoManager::register@25 -- xul2 -- 1
+2016-04-11 14:11:35 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 14:11:35 -- DEBUG -- AccountInfoManager::__construct@9 -- xul2
+2016-04-11 14:11:35 -- DEBUG -- AccountInfoManager::register@23 -- xul2 -- INSERT INTO account (account, password,status,register_time) values (?,?,?, unix_timestamp()) 
+2016-04-11 14:11:35 -- ERROR -- MySQLManager::execute@31 -- Error Info: ["23000",1062,"Duplicate entry 'xul2' for key 'account_idx'"]
+2016-04-11 14:11:35 -- DEBUG -- AccountInfoManager::register@25 -- xul2 -- false
+2016-04-11 16:07:22 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 16:07:22 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 16:07:22 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-11 16:07:22 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-11 16:07:22 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:07:22 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-11 16:07:22 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:08:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:08:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:09:01 -- DEBUG -- LoginManager::logout@75 -- xul -- 1
+2016-04-11 16:09:16 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 16:09:16 -- DEBUG -- AccountInfoManager::__construct@9 -- xul@send.com
+2016-04-11 16:09:16 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul@send.com","96e79218965eb72c92a549dd5a330112"]
+2016-04-11 16:09:16 -- DEBUG -- LoginManager::login@43 -- user_password_er -- {"account":"xul@send.com","lang":null,"skin":null} -- null
+2016-04-11 16:09:24 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 16:09:24 -- DEBUG -- AccountInfoManager::__construct@9 -- xul@send.com
+2016-04-11 16:09:24 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul@send.com","1c63129ae9db9c60c3e8aa94d3e00495"]
+2016-04-11 16:09:24 -- DEBUG -- LoginManager::login@43 -- user_password_er -- {"account":"xul@send.com","lang":null,"skin":null} -- null
+2016-04-11 16:12:27 -- DEBUG -- LoginManager::isLogin@86 -- xul@send.com -- 1
+2016-04-11 16:12:27 -- DEBUG -- LoginManager::isLogin@86 -- xul@send.com -- 1
+2016-04-11 16:13:32 -- DEBUG -- LoginManager::isLogin@86 -- xul@send.com -- 1
+2016-04-11 16:13:33 -- DEBUG -- LoginManager::isLogin@86 -- xul@send.com -- 1
+2016-04-11 16:13:34 -- DEBUG -- LoginManager::isLogin@86 -- xul@send.com -- 1
+2016-04-11 16:13:34 -- DEBUG -- LoginManager::isLogin@86 -- xul@send.com -- 1
+2016-04-11 16:13:35 -- DEBUG -- LoginManager::isLogin@86 -- xul@send.com -- 1
+2016-04-11 16:13:35 -- DEBUG -- LoginManager::isLogin@86 -- xul@send.com -- 1
+2016-04-11 16:13:37 -- DEBUG -- LoginManager::logout@75 -- xul@send.com -- 1
+2016-04-11 16:13:42 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 16:13:42 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 16:13:42 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-11 16:13:42 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-11 16:13:42 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:13:42 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-11 16:13:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:14:42 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:14:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:42:23 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:43:07 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:43:07 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:47:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:48:00 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:48:04 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:48:04 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:48:05 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 16:48:05 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:01:38 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:01:38 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:01:38 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:01:38 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:03:48 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:03:48 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:03:51 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:03:51 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:03:51 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:03:51 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:03:52 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:25 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:25 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:26 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:26 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:27 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:27 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:27 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:27 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:27 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:27 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:36 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:36 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:04:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:26:23 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:26:23 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:43:45 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:43:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:43:47 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:43:57 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:43:58 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:46:23 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:46:24 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:50:03 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:50:03 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:50:03 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-11 17:50:03 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 17:50:03 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 17:50:10 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:50:11 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:50:11 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:50:15 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 17:50:16 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:05:57 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:05:57 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:05:58 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:06:10 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:06:10 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:06:10 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-11 18:06:11 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 18:06:11 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 18:16:20 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:16:21 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:18:30 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:18:30 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:18:30 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-11 18:18:30 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 18:18:30 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 18:18:45 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:18:47 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:18:49 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:18:52 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:18:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:19:01 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:19:01 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:21:02 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:21:03 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:49:28 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:49:28 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:49:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:50:05 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:50:05 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:50:05 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-11 18:50:05 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-11 18:50:05 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-11 18:50:18 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:50:20 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:50:21 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:50:22 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:50:28 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-11 18:50:29 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:12:36 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-12 14:12:36 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-12 14:12:36 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-12 14:12:36 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-12 14:12:36 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:12:36 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-12 14:12:36 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:33 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:36 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:37 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:39 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:45 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:45 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 14:17:46 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-12 14:17:46 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-12 14:17:46 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-12 16:45:43 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-12 16:45:43 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-12 16:45:43 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-12 16:45:43 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-12 16:45:43 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:43 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-12 16:45:44 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:46 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-12 16:45:46 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-12 16:45:46 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-12 16:45:47 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:47 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:47 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-12 16:45:53 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:53 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:53 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-12 16:45:58 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:58 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:45:58 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-12 16:45:58 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-12 16:45:58 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-12 16:45:58 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-12 16:45:58 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-12 16:45:58 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-12 16:45:58 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-12 16:45:58 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":0,"col_count":0,"result":[]}
+
+2016-04-12 16:45:58 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-12 16:45:58 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-12 16:45:58 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-12 16:45:58 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-12 16:45:58 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MA=="}]}
+
+2016-04-12 16:46:00 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:46:01 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:46:02 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:46:02 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:46:12 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:46:12 -- DEBUG -- login_filter_include.php@19 -- call method: add
+2016-04-12 16:46:12 -- DEBUG --  -- add -- "tfddf@300.cn"
+2016-04-12 16:46:12 -- DEBUG --  -- add -- ["tfddf@300.cn"]
+2016-04-12 16:46:12 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-12 16:46:12 -- DEBUG -- SubscriberManager::add@120 -- xul@smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('tfddf@300.cn','1460450772')
+2016-04-12 16:46:12 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-12 16:46:12 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-12 16:46:12 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-12 16:46:12 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-12 16:46:12 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-12 16:46:12 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-12 16:46:12 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-12 16:46:12 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-12 16:46:12 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-12 16:46:12 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-12 16:46:12 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-12 16:46:12 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-12 16:46:12 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-12 16:46:12 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-12 16:46:12 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-12 16:46:12 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-12 16:46:12 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-12 16:46:12 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 09:28:15 -- DEBUG -- LoginManager::isLogin@86 --  -- 
+2016-04-13 09:28:19 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 09:28:19 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-13 09:28:19 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-13 09:28:19 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-13 09:28:19 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:28:19 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-13 09:28:20 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:28:21 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:29:56 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:29:56 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:30:18 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:30:18 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:31:40 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:31:40 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:31:56 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:31:56 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:34:17 -- DEBUG -- LoginManager::logout@75 -- xul -- 1
+2016-04-13 09:34:29 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 09:34:29 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-13 09:34:29 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-13 09:34:29 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-13 09:34:29 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:34:29 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-13 09:34:29 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:25 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:25 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:25 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 09:36:25 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 09:36:25 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-13 09:36:25 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:26 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:26 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-13 09:36:26 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:26 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:26 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-13 09:36:27 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:27 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:27 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 09:36:27 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 09:36:27 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 09:36:27 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 09:36:27 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 09:36:27 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 09:36:27 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 09:36:27 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 09:36:27 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 09:36:27 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 09:36:27 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 09:36:27 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 09:36:27 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 09:36:28 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:36:29 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:45:39 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:55:15 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:55:15 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:56:51 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 09:56:51 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:02:19 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:02:19 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:13:02 -- DEBUG -- SubscriberManager::__construct@7 -- @smletter.com -- letter_subscriber.db
+2016-04-13 10:13:02 -- DEBUG -- SubscriberManager::add@120 -- @smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('222@300.cn','1460513582')
+2016-04-13 10:13:02 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:13:02 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:13:02 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:13:02 -- DEBUG -- SQLiteManager::execute@22 -- @smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:13:53 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:13:53 -- DEBUG -- SubscriberManager::add@120 -- xul@smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('222@300.cn','1460513633')
+2016-04-13 10:13:53 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:13:53 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:13:53 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:13:53 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:14:39 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:14:39 -- DEBUG -- SubscriberManager::add@120 -- xul@smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('2222@300.cn','1460513679')
+2016-04-13 10:14:39 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:14:39 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:14:39 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:14:39 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:14:44 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:14:44 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:14:44 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:14:44 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:14:44 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:14:44 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:14:44 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:14:44 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:14:44 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:14:44 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":3,"col_count":3,"result":[{"id":"Mw==","subscriber":"MjIyMkAzMDAuY24=","subscribed_time":"MTQ2MDUxMzY3OQ=="},{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:14:44 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:14:44 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:14:44 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:14:44 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:14:44 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"Mw=="}]}
+
+2016-04-13 10:15:42 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:15:42 -- DEBUG -- SubscriberManager::add@120 -- xul@smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('555','1460513742')
+2016-04-13 10:15:42 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:15:42 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:15:42 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:15:42 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:15:47 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:15:47 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:15:47 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-13 10:15:50 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:15:50 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:15:50 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:15:50 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:15:50 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:15:50 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:15:50 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:15:50 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:15:50 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:15:50 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:15:50 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":4,"col_count":3,"result":[{"id":"NA==","subscriber":"NTU1","subscribed_time":"MTQ2MDUxMzc0Mg=="},{"id":"Mw==","subscriber":"MjIyMkAzMDAuY24=","subscribed_time":"MTQ2MDUxMzY3OQ=="},{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:15:50 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:15:50 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:15:50 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:15:50 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:15:50 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"NA=="}]}
+
+2016-04-13 10:16:43 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:16:43 -- DEBUG -- SubscriberManager::add@120 -- xul@smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('fdfd@399.cn','1460513803')
+2016-04-13 10:16:43 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:16:43 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:16:43 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:16:43 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:16:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:16:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:16:46 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:16:46 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:16:46 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:16:46 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:16:46 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:16:46 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:16:46 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:16:46 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:16:46 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":5,"col_count":3,"result":[{"id":"NQ==","subscriber":"ZmRmZEAzOTkuY24=","subscribed_time":"MTQ2MDUxMzgwMw=="},{"id":"NA==","subscriber":"NTU1","subscribed_time":"MTQ2MDUxMzc0Mg=="},{"id":"Mw==","subscriber":"MjIyMkAzMDAuY24=","subscribed_time":"MTQ2MDUxMzY3OQ=="},{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:16:46 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:16:46 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:16:46 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:16:46 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:16:46 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"NQ=="}]}
+
+2016-04-13 10:16:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:16:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:16:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:16:59 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:16:59 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:16:59 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:16:59 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:16:59 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:16:59 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:16:59 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:16:59 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":5,"col_count":3,"result":[{"id":"NQ==","subscriber":"ZmRmZEAzOTkuY24=","subscribed_time":"MTQ2MDUxMzgwMw=="},{"id":"NA==","subscriber":"NTU1","subscribed_time":"MTQ2MDUxMzc0Mg=="},{"id":"Mw==","subscriber":"MjIyMkAzMDAuY24=","subscribed_time":"MTQ2MDUxMzY3OQ=="},{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:16:59 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:16:59 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:16:59 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:16:59 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:16:59 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"NQ=="}]}
+
+2016-04-13 10:17:21 -- DEBUG -- LoginManager::logout@75 -- xul -- 1
+2016-04-13 10:17:49 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:17:49 -- DEBUG -- AccountInfoManager::__construct@9 -- xul6
+2016-04-13 10:17:49 -- DEBUG -- AccountInfoManager::register@23 -- xul6 -- INSERT INTO account (account, password,status,register_time) values (?,?,?, unix_timestamp()) 
+2016-04-13 10:17:49 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: INSERT INTO account (account, password,status,register_time) values (?,?,?, unix_timestamp())  params:["xul6","96e79218965eb72c92a549dd5a330112",1]
+2016-04-13 10:17:49 -- DEBUG -- AccountInfoManager::register@25 -- xul6 -- 1
+2016-04-13 10:17:54 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:17:54 -- DEBUG -- AccountInfoManager::__construct@9 -- xul6
+2016-04-13 10:17:54 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul6","96e79218965eb72c92a549dd5a330112"]
+2016-04-13 10:17:54 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul6","lang":null,"skin":null,"id":"7","type":"0","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"1460513859"} -- null
+2016-04-13 10:17:54 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:17:54 -- DEBUG -- LoginManager::get_user_type@66 -- xul6 -- 
+2016-04-13 10:17:54 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:01 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:01 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:07 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:08 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:08 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:12 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:12 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:14 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:14 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:18 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:18 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:18:22 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:19:52 -- DEBUG -- LoginManager::logout@75 -- xul6 -- 1
+2016-04-13 10:19:57 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:19:57 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-13 10:19:57 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-13 10:19:57 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-13 10:19:57 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:19:57 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-13 10:19:57 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:19:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:19:59 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:19:59 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:19:59 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:19:59 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-13 10:20:23 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:23 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:23 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:20:23 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:20:23 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:23 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:20:23 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:23 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:23 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:23 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":5,"col_count":3,"result":[{"id":"NQ==","subscriber":"ZmRmZEAzOTkuY24=","subscribed_time":"MTQ2MDUxMzgwMw=="},{"id":"NA==","subscriber":"NTU1","subscribed_time":"MTQ2MDUxMzc0Mg=="},{"id":"Mw==","subscriber":"MjIyMkAzMDAuY24=","subscribed_time":"MTQ2MDUxMzY3OQ=="},{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:20:23 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:20:23 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:23 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:23 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:23 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"NQ=="}]}
+
+2016-04-13 10:20:32 -- DEBUG -- SubscriberManager::__construct@7 -- xul6@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:32 -- DEBUG -- SubscriberManager::add@120 -- xul6@smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('222222fd3@300.cn','1460514032')
+2016-04-13 10:20:32 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:32 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:32 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:32 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:20:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:35 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:35 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:20:35 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:20:35 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:35 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:20:35 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:35 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:35 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:35 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":5,"col_count":3,"result":[{"id":"NQ==","subscriber":"ZmRmZEAzOTkuY24=","subscribed_time":"MTQ2MDUxMzgwMw=="},{"id":"NA==","subscriber":"NTU1","subscribed_time":"MTQ2MDUxMzc0Mg=="},{"id":"Mw==","subscriber":"MjIyMkAzMDAuY24=","subscribed_time":"MTQ2MDUxMzY3OQ=="},{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:20:35 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:20:35 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:35 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:35 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:35 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"NQ=="}]}
+
+2016-04-13 10:20:45 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:45 -- DEBUG -- login_filter_include.php@19 -- call method: del
+2016-04-13 10:20:45 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:45 -- DEBUG -- SubscriberManager::del@137 -- xul@smletter.com -- DELETE FROM letter_subscriber  WHERE id=5
+2016-04-13 10:20:45 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:45 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:45 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:45 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:20:45 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:45 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:20:45 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:20:45 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:45 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:20:45 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:45 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:45 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:45 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":4,"col_count":3,"result":[{"id":"NA==","subscriber":"NTU1","subscribed_time":"MTQ2MDUxMzc0Mg=="},{"id":"Mw==","subscriber":"MjIyMkAzMDAuY24=","subscribed_time":"MTQ2MDUxMzY3OQ=="},{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:20:45 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:20:45 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:45 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:45 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:45 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"NA=="}]}
+
+2016-04-13 10:20:48 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:48 -- DEBUG -- login_filter_include.php@19 -- call method: del
+2016-04-13 10:20:48 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:48 -- DEBUG -- SubscriberManager::del@137 -- xul@smletter.com -- DELETE FROM letter_subscriber  WHERE id=4
+2016-04-13 10:20:48 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:48 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:48 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:48 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:20:48 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:48 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:20:48 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:20:48 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:48 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:20:48 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:48 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:48 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:48 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":3,"col_count":3,"result":[{"id":"Mw==","subscriber":"MjIyMkAzMDAuY24=","subscribed_time":"MTQ2MDUxMzY3OQ=="},{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:20:48 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:20:48 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:48 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:48 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:48 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"Mw=="}]}
+
+2016-04-13 10:20:49 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:49 -- DEBUG -- login_filter_include.php@19 -- call method: del
+2016-04-13 10:20:49 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:49 -- DEBUG -- SubscriberManager::del@137 -- xul@smletter.com -- DELETE FROM letter_subscriber  WHERE id=3
+2016-04-13 10:20:49 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:49 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:49 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:49 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:20:49 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:49 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:20:49 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:20:49 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:49 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:20:49 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:49 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:49 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:49 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":2,"col_count":3,"result":[{"id":"Mg==","subscriber":"MjIyQDMwMC5jbg==","subscribed_time":"MTQ2MDUxMzYzMw=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:20:49 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:20:49 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:49 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:49 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:49 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"Mg=="}]}
+
+2016-04-13 10:20:51 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:51 -- DEBUG -- login_filter_include.php@19 -- call method: del
+2016-04-13 10:20:51 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:51 -- DEBUG -- SubscriberManager::del@137 -- xul@smletter.com -- DELETE FROM letter_subscriber  WHERE id=2
+2016-04-13 10:20:51 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:51 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:51 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:51 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:20:51 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:20:51 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:20:51 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:20:51 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:20:51 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:20:51 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:51 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:51 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:51 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:20:51 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:20:51 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:20:51 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:20:51 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:20:51 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:21:15 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:21:15 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:21:15 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:21:15 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:21:15 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-13 10:21:18 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:21:18 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:21:18 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-13 10:21:21 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:21:21 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:21:21 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-13 10:21:50 -- DEBUG -- LoginManager::logout@75 -- xul -- 1
+2016-04-13 10:21:54 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:21:54 -- DEBUG -- AccountInfoManager::__construct@9 -- xul6
+2016-04-13 10:21:54 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul6","96e79218965eb72c92a549dd5a330112"]
+2016-04-13 10:21:54 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul6","lang":null,"skin":null,"id":"7","type":"0","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"1460513859"} -- null
+2016-04-13 10:21:54 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:21:54 -- DEBUG -- LoginManager::get_user_type@66 -- xul6 -- 
+2016-04-13 10:21:54 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:22:00 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:22:00 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:22:58 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:22:59 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:22:59 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:22 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:23 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:23 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:24 -- DEBUG -- LoginManager::logout@75 -- xul6 -- 1
+2016-04-13 10:23:28 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:23:28 -- DEBUG -- AccountInfoManager::__construct@9 -- xul6
+2016-04-13 10:23:28 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul6","96e79218965eb72c92a549dd5a330112"]
+2016-04-13 10:23:28 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul6","lang":null,"skin":null,"id":"7","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"1460513859"} -- null
+2016-04-13 10:23:28 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:28 -- DEBUG -- LoginManager::get_user_type@66 -- xul6 -- user
+2016-04-13 10:23:29 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:30 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:30 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:30 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:23:30 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:23:30 -- DEBUG -- AccountInfoManager::__construct@9 -- xul6
+2016-04-13 10:23:31 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:31 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:31 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-13 10:23:31 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:31 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:31 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-13 10:23:33 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:33 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:33 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:23:33 -- DEBUG -- query -- xul6@smletter.com -- 20 -- 0
+2016-04-13 10:23:33 -- DEBUG -- SubscriberManager::__construct@7 -- xul6@smletter.com -- letter_subscriber.db
+2016-04-13 10:23:33 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul6@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:23:33 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:23:33 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:23:33 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:23:33 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"MjIyMjIyZmQzQDMwMC5jbg==","subscribed_time":"MTQ2MDUxNDAzMg=="}]}
+
+2016-04-13 10:23:33 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul6@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:23:33 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:23:33 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:23:33 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:23:33 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:23:40 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:52 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:23:52 -- DEBUG -- SubscriberManager::add@120 -- xul@smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('334343@3000xx.com','1460514232')
+2016-04-13 10:23:52 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:23:52 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:23:52 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:23:52 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:23:55 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:55 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:57 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:57 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:57 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:23:57 -- DEBUG -- query -- xul6@smletter.com -- 20 -- 0
+2016-04-13 10:23:57 -- DEBUG -- SubscriberManager::__construct@7 -- xul6@smletter.com -- letter_subscriber.db
+2016-04-13 10:23:57 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul6@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:23:57 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:23:57 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:23:57 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:23:57 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"MjIyMjIyZmQzQDMwMC5jbg==","subscribed_time":"MTQ2MDUxNDAzMg=="}]}
+
+2016-04-13 10:23:57 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul6@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:23:57 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:23:57 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:23:57 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:23:57 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:23:59 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:59 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:59 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:23:59 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:23:59 -- DEBUG -- query -- xul6@smletter.com -- 20 -- 0
+2016-04-13 10:23:59 -- DEBUG -- SubscriberManager::__construct@7 -- xul6@smletter.com -- letter_subscriber.db
+2016-04-13 10:23:59 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul6@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:23:59 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:23:59 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:23:59 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:23:59 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"MjIyMjIyZmQzQDMwMC5jbg==","subscribed_time":"MTQ2MDUxNDAzMg=="}]}
+
+2016-04-13 10:23:59 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul6@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:23:59 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:23:59 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:23:59 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:23:59 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:24:05 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:05 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:05 -- DEBUG -- login_filter_include.php@19 -- call method: getList
+2016-04-13 10:24:07 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:07 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:07 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:07 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:24:07 -- DEBUG -- query -- xul6@smletter.com -- 20 -- 0
+2016-04-13 10:24:07 -- DEBUG -- SubscriberManager::__construct@7 -- xul6@smletter.com -- letter_subscriber.db
+2016-04-13 10:24:07 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul6@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:24:07 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:24:07 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:24:07 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:24:07 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"MjIyMjIyZmQzQDMwMC5jbg==","subscribed_time":"MTQ2MDUxNDAzMg=="}]}
+
+2016-04-13 10:24:07 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul6@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:24:07 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:24:07 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:24:07 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:24:07 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:24:08 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:09 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:09 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:09 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:09 -- DEBUG -- LoginManager::isLogin@86 -- xul6 -- 1
+2016-04-13 10:24:09 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:24:09 -- DEBUG -- query -- xul6@smletter.com -- 20 -- 0
+2016-04-13 10:24:09 -- DEBUG -- SubscriberManager::__construct@7 -- xul6@smletter.com -- letter_subscriber.db
+2016-04-13 10:24:09 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul6@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:24:09 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:24:09 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:24:09 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:24:09 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"MjIyMjIyZmQzQDMwMC5jbg==","subscribed_time":"MTQ2MDUxNDAzMg=="}]}
+
+2016-04-13 10:24:09 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul6@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:24:09 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:24:09 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:24:09 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:24:09 -- DEBUG -- SQLiteManager::execute@22 -- xul6@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:25:17 -- DEBUG -- LoginManager::logout@75 -- xul6 -- 1
+2016-04-13 10:25:21 -- DEBUG -- MySQLManager::__construct@18 -- MySQL Server dsn: mysql:host=172.23.179.35;port=3306;dbname=sml_account;charset=utf8
+2016-04-13 10:25:21 -- DEBUG -- AccountInfoManager::__construct@9 -- xul
+2016-04-13 10:25:21 -- DEBUG -- MySQLManager::execute@44 -- MySQL SQL: SELECT id,account,type,level,status,expired_time,freeze_time,register_time FROM account WHERE account = ? AND password = ? params:["xul","96e79218965eb72c92a549dd5a330112"]
+2016-04-13 10:25:21 -- DEBUG -- LoginManager::login@43 -- ok -- {"account":"xul","lang":null,"skin":null,"id":"1","type":"3","level":"0","status":"1","expired_time":"0","freeze_time":"0","register_time":"0"} -- null
+2016-04-13 10:25:22 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:22 -- DEBUG -- LoginManager::get_user_type@66 -- xul -- user
+2016-04-13 10:25:22 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:24 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:24 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:24 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:25:24 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:25:24 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:25:24 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:25:24 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:25:24 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:25:24 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:25:24 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":2,"col_count":3,"result":[{"id":"Ng==","subscriber":"MzM0MzQzQDMwMDB4eC5jb20=","subscribed_time":"MTQ2MDUxNDIzMg=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:25:24 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:25:24 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:25:24 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:25:24 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:25:24 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"Mg=="}]}
+
+2016-04-13 10:25:28 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:28 -- DEBUG -- login_filter_include.php@19 -- call method: del
+2016-04-13 10:25:28 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:25:28 -- DEBUG -- SubscriberManager::del@137 -- xul@smletter.com -- DELETE FROM letter_subscriber  WHERE id=6
+2016-04-13 10:25:28 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:25:28 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:25:28 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:25:28 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:25:28 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:28 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:25:28 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:25:28 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:25:28 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:25:28 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:25:28 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:25:28 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:25:28 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:25:28 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:25:28 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:25:28 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:25:28 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:25:28 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:25:31 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:31 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:31 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:25:31 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:25:31 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:25:31 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:25:31 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:25:31 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:25:31 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:25:31 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:25:31 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:25:31 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:25:31 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:25:31 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:25:31 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:25:31 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:25:33 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:26:07 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:26:08 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:26:08 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:26:08 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:26:08 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:26:08 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:26:08 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:26:08 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:26:08 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:26:08 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:26:08 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":3,"result":[{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:26:08 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:26:08 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:26:08 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:26:08 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:26:08 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"MQ=="}]}
+
+2016-04-13 10:26:18 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:26:18 -- DEBUG -- SubscriberManager::add@120 -- xul@smletter.com -- INSERT INTO letter_subscriber(subscriber, subscribed_time) values('43434@300xx.com','1460514378')
+2016-04-13 10:26:18 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:26:18 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:26:18 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:26:18 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","row_count":0,"col_count":0,"changed_rows":"1"}
+
+2016-04-13 10:26:21 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:26:22 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:26:22 -- DEBUG -- LoginManager::isLogin@86 -- xul -- 1
+2016-04-13 10:26:22 -- DEBUG -- login_filter_include.php@19 -- call method: query
+2016-04-13 10:26:22 -- DEBUG -- query -- xul@smletter.com -- 20 -- 0
+2016-04-13 10:26:22 -- DEBUG -- SubscriberManager::__construct@7 -- xul@smletter.com -- letter_subscriber.db
+2016-04-13 10:26:22 -- DEBUG -- SubscriberManager::query_by_page@46 -- xul@smletter.com -- SELECT id, subscriber,subscribed_time FROM letter_subscriber WHERE 1=1 ORDER BY subscribed_time DESC LIMIT 0,20
+2016-04-13 10:26:22 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:26:22 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:26:22 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:26:22 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":2,"col_count":3,"result":[{"id":"Nw==","subscriber":"NDM0MzRAMzAweHguY29t","subscribed_time":"MTQ2MDUxNDM3OA=="},{"id":"MQ==","subscriber":"dGZkZGZAMzAwLmNu","subscribed_time":"MTQ2MDQ1MDc3Mg=="}]}
+
+2016-04-13 10:26:22 -- DEBUG -- SubscriberManager::query_by_page@48 -- xul@smletter.com -- SELECT count(id) AS total FROM letter_subscriber WHERE 1=1
+2016-04-13 10:26:22 -- DEBUG -- SQLiteCmmnd::__construct@14 -- user
+2016-04-13 10:26:22 -- DEBUG -- CommonUtils::getHash32@295 -- 12
+2016-04-13 10:26:22 -- DEBUG -- SQLiteCmmnd::getServerId@39 -- sqlite server id=12
+2016-04-13 10:26:22 -- DEBUG -- SQLiteManager::execute@22 -- xul@smletter.com - {"code":200,"msg":"SQL statements execute successful","changed_rows":"0","row_count":1,"col_count":1,"result":[{"total":"Mg=="}]}
+
+2016-04-13 10:41:59 -- DEBUG -- LoginManager::logout@75 -- xul -- 1

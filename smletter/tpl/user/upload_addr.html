@@ -1,0 +1,80 @@
+<h2 class="sub-header">
+<small class="pull-right">
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" id="addr_modal_but" data-target="#addr_modal">
+  {$addr_new_list}
+</button>
+<button type="button" class="btn btn-default btn-sm" id="addr_refresh">
+  <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> {$addr_refresh}
+</button>
+</small>
+{$addr_list}
+</h2>
+
+  <table class="table table-striped" style="table-layout:fixed">
+    <thead>
+      <tr>
+        <th>{$addr_list_name}</th>
+        <th>{$addr_describe}</th>
+        <th>{$addr_amount}</th>        
+        <th>{$addr_create_time}</th>
+        <th>{$addr_operation}</th>
+      </tr>
+    </thead>
+    <tbody id="addr_tb">
+    </tbody>
+  </table>
+ 	<div class="task-nav-page-container">
+		<nav class="task-nav-page">
+		  <ul class="pagination" id="addr_nav_page">
+		  </ul>
+		</nav>
+	</div> 
+<div class="modal fade" id="addr_modal" tabindex="-1" role="dialog" aria-labelledby="addr_modalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="addr_modalLabel">{$addr_upload_list}
+       		<small class="alert alert-warning alert-dismissible" style="display:none" id="ar_error" role="alert"></small>
+		</h4>
+      </div>
+      <div class="modal-body">
+        <form class="" role="search" id="addr_form" enctype="multipart/form-data" >
+        <input type="hidden" name="method" value="add">
+			<div class="form-group">
+			  <label for="ar_lname">{$addr_list_name}</label>
+			  <input type="text" class="form-control" name="ar_lname" id="ar_lname" placeholder="{$addr_list_name}" required>
+			</div>
+			<!-- div class="form-group">
+			  <label for="ar_als">{$addr_alias}</label>
+			  <input type="text" class="form-control" name="ar_als" id="ar_als" placeholder="{$addr_alias}">
+			</div-->
+			<div class="form-group">
+			  <label for="ar_des">{$addr_describe}</label>
+			  <textarea class="form-control" name="ar_des" id="ar_des" placeholder="{$addr_describe}" ></textarea>
+			</div>			
+			<div class="form-group">
+			  <label for="ar_file">{$addr_file}</label>
+			  <input type="file" id="ar_file" name="ar_file" accept="" required>
+			  <p class="help-block">{$addr_file_type}({$addr_template_download}
+			  <a href="javascript:void(0)">txt</a>/
+			  <a href="javascript:void(0)">csv</a>
+			  )</p>
+			</div>
+		  <!-- button type="submit" class="btn btn-default">Submit</button-->
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="addr_sub" data-loading-text="{$addr_upload}..." class="btn btn-primary">{$addr_upload}</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">{$addr_cancel}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- div class="alert alert-success" role="alert">{$addr_explain}
+
+</div-->
+
+<script src="web/js/user/addr.js?v=100000"></script>

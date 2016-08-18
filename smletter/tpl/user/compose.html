@@ -1,0 +1,20 @@
+<div id="compose">
+	<h2 class="sub-header">{$compose_message}</h2>
+	<form role="form" id="compose_form" method="post" enctype="multipart/form-data">
+		<div class="form-group">
+			<label for="inputComposeSubject">{$compose_subject}</label> 
+			<input type="text" class="form-control" name="composeSubject" id="composeSubject" placeholder="{$compose_subject}" required>
+		</div>
+		<div class="form-group">
+			<label for="editor1">{$compose_content}</label>
+			<div id="editorTplDiv">
+				<div name="editor1" id="editor1"></div>
+			</div>
+		</div>
+		<button type="button" id="sendNowButton" class="btn btn-primary">{$compose_send_now}</button>
+		<button type="button" id="sendPreviewButton" class="btn btn-default">{$compose_send_preview}</button>
+		<button type="button" id="saveDraftButton" class="btn btn-default">{$compose_save_draft}</button>
+		<button type="button" id="delMailButton" class="btn btn-default">{$compose_del_mail}</button>
+	</form>
+</div><!-- compose main -->
+<script src="web/js/user/compose.js?v=100000"  type="text/javascript"></script>

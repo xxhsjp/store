@@ -1,0 +1,15 @@
+<script src="web/js/lib/ckeditor/ckeditor.js?v=100000"  type="text/javascript"></script>
+<script src="web/js/lib/ckeditor/config.js?v=100000"  type="text/javascript"></script>
+
+<div>
+	<form>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                This is my textarea to be replaced with CKEditor.
+            </textarea>
+    </form>
+</div><!-- main -->
+<script>
+
+CKEDITOR.replace( 'editor1' );
+
+</script>

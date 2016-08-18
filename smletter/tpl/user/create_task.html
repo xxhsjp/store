@@ -1,0 +1,190 @@
+<h2 class="sub-header">{$task_title}
+	<p class="pull-right">
+		<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#task_modal" >
+		  {$task_add}
+		</button>
+		<button id="task_refr_btn" type="button" class="btn btn-default btn-sm" >
+		  <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> {$task_refresh}
+		</button>
+	</p>
+	<div class="clearfix"></div>
+</h2>
+
+<table id="task_tab" class="table table-striped">
+  <thead>
+    <tr>
+      <th class="th-width-s">{$task_addrlist_name}</th>
+      <th class="th-width-s">{$task_tpl_name}</th>
+      <!-- th class="th-width-m">{$task_from}</th -->
+      <th>{$task_subject}</th>
+      <th class="th-width-xs">{$task_send_count}</th>
+      <th class="th-width-s">{$task_create_date}</th>
+      <th class="th-width-s">{$task_oper_title}</th>
+    </tr>
+  </thead>
+  <tbody id="task_tb">
+  </tbody>
+</table>
+
+<div class="task-nav-page-container">
+	<nav class="task-nav-page">
+	  <ul class="pagination" id="task_nav_page">
+	  </ul>
+	</nav>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="task_modal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">{$task_add}</h4>
+      </div>
+      <div class="modal-body">
+        <form id="task_frm" action="web/php/user/task.php?method=add_task" method="post">
+		  <div class="form-group">
+		    <label for="task_input1">{$task_addrlist_name}</label>
+		    <div class="input-group">
+		      <input type="text" readonly class="form-control" id="task_input1">
+		      <input type="hidden" name="addr_id" id="task_addr_id">
+		      <div class="input-group-btn">
+		        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" > {$task_select} <span class="caret"></span></button>
+		        <ul id="task_select_1" class="dropdown-menu dropdown-menu-right">
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="task_input2">{$task_tpl_name}</label>
+		    <div class="input-group">
+		      <input type="text" readonly class="form-control" id="task_input2">
+		      <input type="hidden" name="tpl_id" id="task_tpl_id">
+		      <div class="input-group-btn">
+		        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" > {$task_select} <span class="caret"></span></button>
+		        <ul id="task_select_2" class="dropdown-menu dropdown-menu-right">
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		  <!-- div class="form-group">
+		    <label for="task_input3">{$task_mail_from}</label>
+		    <div class="input-group">
+		      <input name="mail_from" type="text" readonly class="form-control" id="task_input3">
+		      <input name="mail_from_type" type="hidden"  id="task_mail_from_type" value="0">
+		      <div class="input-group-btn">
+		        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" > {$task_select} <span class="caret"></span></button>
+		        <ul id="task_select_3" class="dropdown-menu dropdown-menu-right">
+		        </ul>
+		      </div>
+		    </div>
+		  </div -->
+		  <div class="form-group">
+		    <label for="task_input6">{$task_mail_reply}</label>
+		    <input name="reply_to" type="text" maxlength="200" norequired="true" class="form-control" id="task_input6">
+		  </div>
+		  <!-- div class="form-group">
+		    <label for="task_input4">{$task_subject}</label>
+		    <input name="mail_subject" type="text" maxlength="200" class="form-control" id="task_input4">
+		  </div -->
+		  <div class="form-group">
+		    <label for="task_input5">{$task_from}</label>
+		    <input name="from_addr" type="text" maxlength="100" class="form-control" id="task_input5">
+		  </div>
+		</form>
+      </div>
+       
+      <div class="modal-footer">
+        <button id="submit_btn" type="button" class="btn btn-primary">{$task_save}</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">{$task_close}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal" id="task_detail_modal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">{$task_detail}</h4>
+      </div>
+      <div class="modal-body">
+		<div id="task_canvas_holder">
+      	<span id="task_detail_info"></span>
+		</div>
+      </div>
+      <div class="modal-footer">
+        <button id="task_download_detail" type="button" class="btn btn-primary" data-dismiss="modal">{$task_download_detail}</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">{$task_close}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal" id="task_test_modal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">{$task_test_title}</h4>
+      </div>
+      <div class="modal-body">
+		<form id="task_test_frm" action="web/php/user/task.php?method=test_task" method="post">
+		  <div class="form-group">
+		    <label for="task_test_input1">{$task_test_label}</label>
+		    <input name="task_test_data" type="text" required maxlength="800" class="form-control" id="task_test_input1">
+		  </div>
+		  <input name="tid" type="hidden" id="task_test_input2">
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button id="task_test_submit_btn" type="button" class="btn btn-primary" data-dismiss="modal">{$task_test_send}</button>
+     	<button type="button" class="btn btn-default" data-dismiss="modal">{$task_close}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="task_send_modal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">{$task_send_title}</h4>
+      </div>
+      <div class="modal-body">
+		<form id="task_send_frm" action="web/php/user/task.php?method=start_task" method="post">
+		  <div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios1" value="0" checked>
+			    {$task_send_label1}
+			  </label>
+		  </div>
+		  <div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios2" value="1">
+			    {$task_send_label2}
+			    <input class="date form_datetime" name="send_time" disabled id="task_input7" type="text" value="">
+			  </label>
+		  </div>
+		  <input name="tid" type="hidden" id="task_send_input2">
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button id="task_send_submit_btn" type="button" class="btn btn-primary" data-dismiss="modal">{$task_send_send}</button>
+     	<button type="button" class="btn btn-default" data-dismiss="modal">{$task_close}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="web/js/user/task.js?v=100000"></script>
+
+
+  	

@@ -1,0 +1,82 @@
+<?php
+
+class LangTpls
+{
+	const TEMPLATE_MANAGEMENT = '模板管理';
+	const TEMPLATE_NAME = '模板名称';
+	const TEMPLATE_SUBJECT = '主题';
+	const TEMPLATE_SUBJECT_TIP = '（提示：用此模板发送邮件的主题）';
+	const TEMPLATE_STATUS = '状态';
+	const TEMPLATE_ACCOUNT = '账号';
+	const TEMPLATE_COUNT = '计数';
+	const TEMPLATE_BUILD_TIME = '创建时间';
+	const TEMPLATE_OPTION = '操作';
+	const TEMPLATE_NEW_ADD = '新建模板';
+	const TEMPLATE_EDIT_MOD = '编辑模板';
+	const TEMPLATE_EDIT_CONTENT = '编辑模板内容';
+	const TEMPLATE_REFERASH = '刷新';
+	const TEMPLATE_EDIT = '编辑';
+	const TEMPLATE_SUBMIT_AUDIT = '提交审核';
+	const TEMPLATE_TPL_AUDIT = '模板审核';
+	const TEMPLATE_AUDIT = '审核';
+	const TEMPLATE_AUDIT_NON = '未审核';
+	const TEMPLATE_AUDITING = '审核中';
+	const TEMPLATE_AUDIT_OK = '审核成功';
+	const TEMPLATE_AUDIT_FAIL = '审核失败';
+	const TEMPLATE_POST_AUDIT_OK = '提交审核成功';
+	const TEMPLATE_POST_AUDIT_FAIL = '提交审核失败';
+	const TEMPLATE_DELETE = '删除';
+	const TEMPLATE_PREVIEW = '预览';
+	const TEMPLATE_TPL_ADOPT = '通过';
+	const TEMPLATE_TPL_NO = '不通过';
+	const TEMPLATE_PREVIEW_TPL_FAIL = '预览模板失败';
+	const TEMPLATE_RETURN = '返回';
+	const TEMPLATE_CANCEL = '取消';
+	const TEMPLATE_SURE = '确定';
+	const TEMPLATE_MAIL_SUBJECT = '邮件标题';
+	const TEMPLATE_SENDER = '发件人名称';
+	const TEMPLATE_VARIABLE_DESCRIPTION = '变量说明';
+	const TEMPLATE_DESCRIPTION = '{EAddr}替换用户邮箱地址{UserName}替换用户真实姓名{NickName}替换用户昵称{Gender}替换用户称呼{先生，女士}{Birthday}替换用户生日{Mobile}替换用户电话';
+	const TEMPLATE_ADDING = '新建模板中...';
+	const TEMPLATE_UPLOAD_FILE = '上传';
+	const TEMPLATE_UPLOAD_FILE_TITLE = '上传模板zip包';
+	const TEMPLATE_MESSAGE = '提示信息';
+	const TEMPLATE_DELETE_TIP = '确定删除记录吗？';
+	const TEMPLATE_ADD_TPL_OK = '新建模板成功';
+	const TEMPLATE_ADD_TPL_FAIL = '新建模板失败';
+	const TEMPLATE_ADD_TPL_REPEAT = '新建的模板已存在';
+	const TEMPLATE_INPUT_TPL_CONTENT = '请编辑模板内容';
+	const TEMPLATE_EDIT_TPL_OK = '编辑模板成功';
+	const TEMPLATE_EDIT_TPL_FAIL = '编辑模板失败';
+	const TEMPLATE_DEL_TPL_FAIL = '删除模板失败';
+	const TEMPLATE_DEL_TPL_OK = '删除模板成功';
+	const TEMPLATE_FILE_TYPE_ERROR = '将图片文件夹images和模板文件index.html一起压缩名为send.zip压缩包后上传，请按照此命名规则上传。';
+	const TEMPLATE_ZIP_INFO = '温馨提示：压缩包send.zip大小不超过1M，文件index.html不超过100K效果最佳，图片目录images里的图片必须英文命名，图片类型支持png、jpg、gif。';
+	const TEMPLATE_OPER_ERROR = '操作失败';
+	const TEMPLATE_NO_ADMIN = '目前没有管理员，请联系运营商';
+	const TEMPLATE_GET_FAIL = '获取模板失败';
+	const TEMPLATE_BEEN_AUDIT = '此模板已审核';
+	const TEMPLATE_NO_EXIST_AUDIT = '申请模板审核的账号不存在';
+	const TEMPLATE_ILLEGAL_OPT = '您非法操作';
+	const TEMPLATE_EXPIRED_NO_OPEN = '订单已过期或未生效';
+	const TEMPLATE_NUM_LIMIT = '模板总数超过上限';
+	const TEMPLATE_FILE_SIZE_LIMIT = '模板大小超过最大限制';
+	const TEMPLATE_GET_LIST_FAIL = '获取数据失败';
+	const TEMPLATE_NO_BE_AUDIT = '没有待审核的模板';
+	const TEMPLATE_ZIP_LIMIT = '压缩包大小不超过1M';
+	const TEMPLATE_PIC_INFO = '图片目录images里的图片必须英文命名，图片类型支持png、jpg、gif。';
+	const TEMPLATE_REASON_DESCRIPTION = '审核结果描述';
+	const TEMPLATE_AUDIT_FAIL_REASON_1 = '模板内容不合法，涉及敏感信息';
+	const TEMPLATE_AUDIT_FAIL_REASON_2 = '模板内容过长，建议精简';
+	const TEMPLATE_AUDIT_FAIL_REASON_3 = '模板内容违反法律法规';
+	const TEMPLATE_AUDIT_FAIL_REASON_4 = '模板内容不具体过于简单，建议完善';
+	const TEMPLATE_AUDIT_FAIL_REASON_5 = '模板图片无法显示，请重新提交';
+	const TEMPLATE_AUDIT_SELECT = '请选择';
+	const TEMPLATE_AUDIT_SELECT_REASON = '请选择或填写模板不通过的原因';
+	const TEMPLATE_SUBJECT_LIMIT = '主题长度超过200个字符';
+	const TEMPLATE_SUBJECT_NULL = '主题不能为空';
+	const TEMPLATE_NAME_NULL = '模板名称不能为空';
+	const TEMPLATE_AUDIT_TIP = '操作失败，模板的状态可能是审核中或审核成功。';
+}
+
+?>

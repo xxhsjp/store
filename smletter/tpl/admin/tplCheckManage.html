@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0;">
+    	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    	<meta name="description" content="__web_index__">
+    	<link type="image/png" href="../../web/skin/cool/image/favicon.ico?v=100000" rel="shortcut icon">
+    	<link href="../../web/skin/cool/bs/css/bootstrap.css?v=100000" rel="stylesheet">
+    	<link href="../../web/js/lib/datetimepicker/css/bootstrap-datetimepicker.min.css?v=100000" rel="stylesheet">
+    	<title>模板审核</title>
+  	</head>
+
+  	<body>
+  		<div style="text-align:center;" id="showTplAudit"><font color="#337ab7;"><h3><strong></strong></h3></font></div>
+		<iframe id="iframeTpl" frameborder="0" height="680px" width="100%"></iframe>
+		<button type="button" class="btn btn-primary btn-sm" id="tplYes"></button>
+		<button type="button" class="btn btn-default btn-sm" id="tplNo"></button>
+		<div class="dropup" style="display:inline">
+		    <input type="hidden" name="tplReason" id="tplReason">
+  			<button class="btn btn-default dropdown-toggle" type="button" id="failTplB" data-toggle="dropdown"></button>
+  			<ul id="tplFailList" class="dropdown-menu" aria-labelledby="failTplB"></ul>
+  			<input type="text" class="form-control" style="width:600px;display:inline;" id="tplReasonInput">
+		</div> 
+   		<script src="../../web/js/lib/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript">
+		$(function(){
+			var request = {
+				QueryString : function(val){
+					var uri = window.location.search;
+					var re = new RegExp("" +val+ "=([^&?]*)", "ig");
+					return ((uri.match(re))?(uri.match(re)[0].substr(val.length+1)):null);
+				}
+			}
+			
+			if(window.opener == null){
+				alert("非法操作");
+				closeNewWindow();
+				return;
+			}
+			
+			$("#tplReasonInput").attr("placeholder",window.opener.Lang.template_audit_select_reason);
+			
+			function closeNewWindow(){
+				if (navigator.userAgent.indexOf("MSIE") > 0) {
+					if (navigator.userAgent.indexOf("MSIE 6.0") > 0) {
+						window.opener = null;
+						window.close();
+					} else {
+						window.open('', '_top');
+						window.top.close();
+					}
+				} else if (navigator.userAgent.indexOf("Firefox") > 0) {
+					window.location.href = 'about:blank ';
+				} else {
+					window.opener = null;
+					window.open('', '_self', '');
+					window.close();
+				}
+			}
+			
+			var arrayReason = [window.opener.Lang.template_audit_fail_reason_1,
+			                   window.opener.Lang.template_audit_fail_reason_2,
+			                   window.opener.Lang.template_audit_fail_reason_3,
+			                   window.opener.Lang.template_audit_fail_reason_4,
+			                   window.opener.Lang.template_audit_fail_reason_5
+			                   ];
+			var html = [];
+			for(i=0;i<arrayReason.length;i++){
+				var rId = i+1;
+				str = '<li><a resId="'+rId+'" href="javascript:void(0);">'+arrayReason[i]+'</a></li>';
+				html.push(str);
+			}
+			$("#tplFailList").html(html.join(""));
+			
+			$("#tplYes").html(window.opener.Lang.template_tpl_adopt);
+			$("#tplNo").html(window.opener.Lang.template_tpl_no);
+			var tplButton = '<span class="caret"></span>';
+			$("#failTplB").html(window.opener.Lang.template_audit_select+tplButton);
+			var id = request.QueryString("id");
+			var tplD = request.QueryString("tplD");
+			var tplA = request.QueryString("tplA");
+			var tplSub = request.QueryString("tplSub");
+			$("#showTplAudit").html("<h3><strong>"+decodeURIComponent(tplSub)+"</strong></h3>");
+			$("#iframeTpl").attr("src","../../web/php/admin/tplManage.php?method=showTpl&id="+tplD+"&tplA="+tplA);
+		
+			$('#tplFailList').delegate('A', 'click', function(){
+				var html = $(this).html();
+				var rId = $(this).attr('resId');
+				$(this).parents().find('input:hidden').val(rId);
+				$("#failTplB").html(arrayReason[rId-1]+tplButton);
+			});
+			
+			var opering = false;
+			$("#tplYes").click(function () {
+				if(opering == true){
+					return;	
+				}
+				checkTplPost("1");
+			});
+			$("#tplNo").click(function () {
+				if(opering == true){
+					return;
+				}
+				checkTplPost("2");
+			});
+		
+			function checkTplPost(v){
+				var dId = 0;
+				var wTTip = null;
+				if(v == '2'){
+					dId = $("#tplReason").val();
+					wTTip = $("#tplReasonInput").val().replace(window.opener.Lang.template_audit_select_reason,'');
+					if($.trim(dId).length < 1 && $.trim(wTTip).length < 1){
+						alert(window.opener.Lang.template_audit_select_reason);
+						return;
+					}
+				}
+				
+				$.ajax({
+					type: "post",
+					data: {"id":id, "flag":v, "tplA":tplA, "tplD":tplD, "tplTip":dId, "wTTip": wTTip},
+					datatype:"json",
+		        	url: "../../web/php/admin/tplManage.php?method=auditManageTpl",
+		        	beforeSend: function() {
+		        		opering = true;
+					},
+		        	success: function(msg){
+		        		opering = false;
+		        		if(msg.code !== 1){
+		        			window.opener.tplManageController.showErrorMsg(msg.code);
+		        		}
+		        		window.opener.tplManageController.mReferash();
+		        		window.close();
+		        	}
+		    	});
+			}
+		})
+		</script>
+		<script src="../../web/js/lib/bootstrap-3.3.5/dist/js/bootstrap.min.js"></script>
+    	<script src="../../web/js/lib/bootstrap-3.3.5/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+  	</body>
+</html>

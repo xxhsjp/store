@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>邮件自媒体</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/responsive.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css"/>
+	</head>
+	<body>
+		<div class="header clearfix">
+			<div class="container">
+				<div class="fl"><img src="img/logo.png"/><span class="header-fu">欢迎注册</span></div>		
+				<div class="from-mail-head fr">
+					<ul>
+						<li class="txt-zi-grey" style="display: none;">已有账号</li>
+						<li class="txt-zi"><a href="#">登  录</a></li>
+					</ul>
+					<ul style="display: none;">
+						<li class="txt-zi-grey-1">李淑社</li>
+						<li class="f-c-grey">|</li>
+						<li class="txt-zi-orange"><a href="#" class="f-s-14">退出</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="from-mail-book"></div>
+		<div class="from-mail-book-con clearfix">
+			 <from>
+				<div class="from-mail-book-con-left"><div><img src="img/frommail-sub.png" /></div></div>
+				<div class="from-mail-book-con-right">
+					<h1>纽咕噜时事</h1>
+				    <p class="mar-top40">随着电子邮件，还有连接的推定的他个人的事情，这使</p>
+				    <p>得它一个很好的平台出版者。</p>
+				    <p>较新的电子邮件通讯的衣服像FromMail</p>
+				    <hr/>
+				    <div class="row">
+				    	<div class="col-md-8"><input id="subscribe_mail" class=" form-control" type="email" placeholder="eamil@example.com" required></div>
+				    	<div class="col-md-4"><a href="javascript:void(0);" onclick="commit();" id="submit_btn" class="btn form-mail-btn-default" role="button">订阅</a></div>
+				    </div>
+				</div>
+				<!--<a  href="#" class="from-mail-book-con-btn" role="button">显示更多<i class="fa fa-chevron-circle-right" aria-hidden="true"></i></a>-->
+			</from>
+		</div>
+		<script>
+		
+		var url = 'http://'+window.location.host + (window.location.port?':'+ window.location.port:'');
+		var hash = window.location.hash;
+		
+		function commit(){
+			var user = '';
+			if(hash){
+				user = hash.replace('#', '');
+			}
+			if(!user){
+				return;
+			}
+			
+			var email = document.getElementById('subscribe_mail');
+			if(email.value == '' || email.value.indexOf('@') == -1){
+				email.focus();
+				alert('请输入正确的邮件地址');
+				return;
+			}
+			var data = 'emails='+email.value+'&user='+user;
+			var xhr = new XMLHttpRequest();
+			xhr.open("POST", url+"/smletter/web/php/user/api.php", true);
+			xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+			xhr.onreadystatechange = function(){
+				if(xhr.readyState == 4){
+					if(xhr.status == 200){
+						if(xhr.responseText == 1){
+							alert('订阅成功');
+						}
+					}
+				}
+			}
+			xhr.send(data);
+			
+		}
+
+		</script>
+	</body>
+</html>

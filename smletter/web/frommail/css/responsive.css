@@ -1,0 +1,26 @@
+@media (max-width: 767px){
+	.container { width: 100%;}
+	.from-mail-book-con{width:100%;top:5%; background: transparent;}
+	.from-mail-book-con-left{clear: both;width:100%;}
+	.from-mail-book-con-left div{margin:10px auto;width:220px; height: 220px; border-radius:100%; overflow: hidden; text-align: center;}
+	.from-mail-book-con-left img{ margin: 0 auto;}
+	.from-mail-book-con-right{margin:0 auto;padding:0;width:100%;clear:both;padding:0 15px;}
+	
+	
+	}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+	.container {
+    width: 970px;
+  }
+	
+}
+@media (min-width: 1220px) {
+	 .container {
+    width: 1210px;
+  }
+}

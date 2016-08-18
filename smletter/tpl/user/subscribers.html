@@ -1,0 +1,120 @@
+<!-- ---------------------------------------------sbuscriber manager start ----------------------------------------- -->
+
+<div>
+<h2 class="sub-header">
+<div class="row">
+  <div class="col-lg-5">
+{$subs_subscribers}
+  </div><!-- /.col-lg-6 -->
+<small class="pull-right">
+<button type="button" class="btn btn-primary btn-sm" id="subs_new">
+  {$subs_add}
+</button>
+<button type="button" class="btn btn-default btn-sm" id="subs_delete_all">
+  <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> {$subs_delete_all}
+</button>
+</small>
+  
+</div><!-- /.row -->
+</h2>
+  <table class="table table-striped" style="table-layout:fixed">
+    <thead>
+      <tr>
+        <th width="70%">{$subs_subscribers}</th>
+        <th width="20%">{$subs_date}</th>
+      </tr>
+    </thead>
+    <tbody id="subs_tb">
+    </tbody>
+  </table>
+	<div class="task-nav-page-container">
+		<nav class="task-nav-page">
+		  <ul class="pagination" id="subs_nav_page">
+		  </ul>
+		</nav>
+	</div>  
+
+
+</div>
+<!-- ---------------------------------------------sbuscriber manager end ----------------------------------------- -->
+
+<!-- ---------------------------------------------edit sbuscriber manager start ----------------------------------------- -->
+<div class="modal fade " role="dialog" tabindex="-1" aria-labelledby="gridSystemModalLabel" id="edit_subs_modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+      <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      	<h2 class="sub-header">
+		<label class="subs_subject" id="sub_subscriber"></label>
+		</h2>
+		<label>{$subs_date}&nbsp;</label><label id="sub_subscribed_time"></label>
+      </div>
+      <div class="modal-body">
+		  <table class="table" style="table-layout:fixed">
+		    <thead>
+		      <tr>
+		        <th>{$subs_open_total}</th>
+		        <th>{$subs_unique_open}</th>
+		       	<th>{$subs_total_click}</th>
+		        <th>{$subs_unique_click}</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+		    	<tr>
+			    	<td id="sub_total_opens_0">0</td>
+			    	<td id="sub_unique_opens_0">0</td>
+			    	<td id="sub_total_clicks_0">0</td>
+			    	<td id="sub_unique_clicks_0">0</td>
+		    	</tr>
+		    </tbody>
+		  </table>
+
+		  	<label for="subs_note">{$subs_subscribers}{$subs_note} </label>
+		  	<input type="hidden" id="sub_id"></input>
+			<textarea class="form-control" name="description" id="sub_description" placeholder="{$subs_note}" required></textarea>
+			<!-- p>{$subs_note1}</p-->
+	  	</div>
+	  
+	  	<div class="modal-footer">
+	  		<button type="button" class="btn btn-primary" id="subs_save">
+			  {$subs_save}
+			</button>
+			<button type="button" class="btn btn-default" id="subs_del">
+			  {$subs_delete}
+			</button>
+		</div>
+     </div>
+    </div>
+
+</div>
+<!-- ---------------------------------------------edit sbuscriber manager end ----------------------------------------- -->
+<!---------------------------------------------- add sbuscriber mamager start------------------------------------------- -->
+
+<div style="display:none">
+	<h2 class="sub-header">
+	<small class="pull-right">
+	<button type="button" class="btn btn-default" id="subs_return">
+	  <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> {$subs_return}
+	</button>
+	</small>
+		<label class="subs_subject">{$subs_add}</label>
+	</h2>
+
+	<div class="form-group">
+	    <p>
+			
+		</p>
+	  	<label for="subs_email">{$subs_email} </label>
+		<textarea class="form-control" name="subs_email" id="subs_email" placeholder="{$subs_email}" required></textarea>
+		<!-- p>{$subs_note1}</p-->
+  		<button type="button" class="btn btn-primary" id="subs_add">
+		  {$subs_add}
+		</button>
+	</div>
+
+
+
+</div>
+
+<!---------------------------------------------- add sbuscriber mamager end------------------------------------------- -->
+<script src="web/js/user/subscribers.js?v=100000"></script>

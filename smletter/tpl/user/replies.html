@@ -1,0 +1,34 @@
+<script src="web/js/common/Page.js?v=100000"  type="text/javascript"></script>
+<div id="replies">
+	<div id="repliesList">
+		<h2 class="sub-header">{$compose_replies_list}</h2>
+		<table class="table table-striped" style="table-layout:fixed">
+    		<thead>
+      			<tr>
+        			<th>{$compose_from}</th>
+        			<th class="th-width-m">{$compose_subject}</th>
+        			<th class="th-width-m">{$compose_send_time}</th>
+        			<th class="th-width-xs">&nbsp;</th>
+      			</tr>
+   			</thead>
+    		<tbody id="repliesList_tb"></tbody>
+  		</table>
+  		<nav>
+  			<ul id="pageBar_replies" class="pagination"></ul>
+  		</nav>
+  	</div>
+  	
+  	<div id="repliesShow" style="display:none;">
+  		<h2 class="sub-header pad-t15">{$compose_reply_content}</h2>
+  		<form role="form" id="tpl_form" method="post" enctype="multipart/form-data">
+  		<div id="repliesContent"></div>
+  		<div id="repliesMailDiv" style="padding-top:10px;padding-bottom:10px;">
+			<div name="repliesMailEditor1" id="repliesMailEditor1"></div>
+		</div>
+  		<button type="button" id="repliesButton" class="btn btn-primary">{$compose_reply_now}</button>
+        <button type="button" id="repliesCancelButton" class="btn btn-default">{$compose_cancel}</button>
+        <button type="button" id="repliesDelButton" class="btn btn-default">{$compose_del_mail}</button>
+	  	</form>
+	</div><!-- add -->
+</div><!-- compose main -->
+<script src="web/js/user/replies.js?v=100000"  type="text/javascript"></script>

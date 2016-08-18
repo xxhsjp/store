@@ -1,0 +1,211 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header { 
+
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dee3ea;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+    position: fixed;
+    width:130px;
+    top: 49px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 0 20px 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #363636;z-index:1031
+    
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #ff574e;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*
+ * Task
+ */
+#task_tab {
+	table-layout: fixed;
+}
+.th-width-xs {
+	width:10%;
+}
+.th-width-s {
+	width:15%;
+}
+.th-width-m {
+	width:20%;
+}
+
+
+/*
+ * Customer common
+ */
+.text-ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+}
+.text-nowrap {
+    overflow: hidden;
+    white-space: nowrap;
+    word-break: break-all;
+}
+
+#modal_info_content {
+	padding: 10px;
+	text-align: center;
+	color: green;
+	font-weight: bold;
+}
+
+/*
+ * Task
+ */
+#task_detail_info{
+	position: absolute;
+}
+
+#task_canvas_holder{
+	position: relative;
+}
+
+.task-oper{
+	margin-right: 5px;
+}
+/* add */
+body{font-family: Microsoft YaHei}
+a,a:hover,a:focus{outline:none}
+.table-striped > tbody > tr:hover{background:#f5fafd}
+.transition{-moz-transition:all 0.3 ease-in-out;-webkit-transition:all 0.3 ease-in-out;transition:all 0.3 ease-in-out}
+.modal-dialog .row{margin-bottom:5px;}.modal-dialog .row:last-child{margin-bottom:0}
+.modal-dialog label{font-weight:normal}
+.nav > li > a{color:#fff;-moz-transition:all 0.6 ease-in-out;-webkit-transition:all 0.6 ease-in-out;transition:all 0.6 ease-in-out}
+.nav > li > a:hover,.nav > li > a:focus{background:none}
+.nav > li > a:hover,.nav > li > a:focus{
+	background:rgba(255,255,255,0.15);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#15ffffff,endColorstr=#15ffffff);
+}
+#sidebar .fa,#sidebar .glyphicon{ width:20px;}
+.nav.nav-main{ margin-left:-20px; margin-right:-20px;}
+.nav-sidebar{margin-bottom:0}
+.nav-main > li > a{padding-left:20px;padding-right:20px;}
+.nav-main > li.main-li > a,.nav-main > li.main-li > a:hover,.nav-main > li.main-li > a:focus{background:#212121}
+.navbar-brand{cursor:pointer}
+.user-dian{padding:0 15px;width:210px;-moz-box-shadow:0 0 4px rgba(0,0,0,.2);-webkit-box-shadow:0 0 4px rgba(0,0,0,.2);box-shadow:0 0 4px rgba(0,0,0,.2); background:#fff; position:absolute ;left:500px; top:48px;}
+.user-dian h2{font-size:16px;}
+.font-red{ color:#ff3333}
+.divide{ height:1px; font-size:0; background:#e2e2e2}
+.user-dian a{ float:right; color:#000; font-size:14px;padding:10px 0; }
+.user-dian a:hover,.user-dian a:focus{ color:#333; text-decoration:none}
+.navbar-inverse .navbar-nav > .open > a,.navbar-inverse .navbar-nav > .open > a:hover,.navbar-inverse .navbar-nav > .open > a:focus{background:#eee;color:#000}
+.l-h50{line-height:50px;color:#ccc}
+.dropdown-toggle > .fa{padding-left:5px;vertical-align:baseline}
+
+@media (min-width: 768px){
+.logo{ width:150px;  height:50px; background-color:#363636;float:left;}
+.logo img{margin-top:7px;margin-left:15px;}
+.td-768-no{width:150px;}
+#sidebar.col-sm-3,#sidebar.col-md-2{ width:150px; float:Left;}
+#content_area.col-sm-3,#content_area.col-md-10{width:100%}
+.navbar .container-fluid{padding-left:0}
+.navbar-inverse{background:#f7f7f7; border-bottom:1px solid #d6d6d6;}
+.navbar-inverse .navbar-nav > li >a{ color:#333;-moz-transition:all 0.3 ease-in-out;-webkit-transition:all 0.3 ease-in-out;transition:all 0.3 ease-in-out}
+.navbar-inverse .navbar-nav > li >a:hover,.navbar-inverse .navbar-nav > li >a:focus{ color:#000}
+.navbar-inverse .navbar-brand{ color:#333;-moz-transition:all 0.3 ease-in-out;-webkit-transition:all 0.3 ease-in-out;transition:all 0.3 ease-in-out}
+.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus{color:#000}
+}
+
+@media (min-width: 992px){
+.logo,.td-768-no,#sidebar.col-sm-3,#sidebar.col-md-2{ width:220px;}
+
+
+}
+	
+@media (max-width: 768px){
+.logo{ height:50px; background-color:#222;float:left; }
+.logo img{margin-top:7px;margin-left:0px;}
+.td-768-no{position:absolute;width:145px;}
+.main{padding-left:5px;padding-right:5px;}
+}
+

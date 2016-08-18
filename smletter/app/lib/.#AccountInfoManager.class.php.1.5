@@ -1,0 +1,40 @@
+<?php
+class AccountInfoManager extends MySQLManager
+{
+	private $__account;
+	
+	public function __construct($account){
+		$this->__account = isset($account) ? $account : SessionManager::getAccount();
+		parent::__construct();
+		Log::debug(__METHOD__.'@'.__LINE__.LOG_SEP.$this->__account);
+	}
+	
+	public function auth_login($account, $password){
+		$sql = "SELECT id,name,type,agent_id,group_id,status,expired,freeze_time,open_time,linkman FROM account WHERE account = ? AND password = ?";
+		$params = array($account, $password);
+		$result = $this->execute($sql, $params);
+		
+		return $result;
+	}
+	
+	public function get_effective_order($account_id){
+		$time = time();
+		$sql = "SELECT id,number,type,saler_id,price,total_count,used_count,addrlist_limit,tpl_count_limit,daily_send_limit,sign_date,effective,expired FROM orders WHERE account_id = ? AND effective < ? AND expired > ? ORDER BY id";
+		$params = array($account_id, $time, $time);
+		$result = $this->execute($sql, $params);
+		$result = isset($result[0]) ? $result[0] : null;
+		
+		return $result;
+	}
+	
+	public function increaseUsedCount($order_id, $count=1){
+		$sql = "UPDATE orders SET used_count = IFNULL(used_count, 0)+? WHERE id=?";
+		$params = array($count, $order_id);
+		$result = $this->execute($sql, $params);
+		
+		return $result;
+	}
+	
+}
+
+?>

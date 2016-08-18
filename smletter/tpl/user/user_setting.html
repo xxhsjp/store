@@ -1,0 +1,49 @@
+<h2 class="sub-header">
+{$user_setting}
+</h2>
+
+  <table class="table table-striped" style="table-layout:fixed">
+    <thead>
+      <tr>
+      </tr>
+    </thead>
+    <tbody id="user_setting_tb">
+    	<tr><td><a href="#" data-toggle="modal" data-target="#password_modal"><i class="fa fa-unlock-alt" style="padding-right:5px;"></i>{$user_pass_edit}</a></td></tr>
+    </tbody>
+  </table>
+  
+  <div class="modal fade bs-example-modal-sm" id="password_modal" tabindex="-1" role="dialog" aria-labelledby="password_modalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="password_modalLabel">{$user_pass_edit}
+       		<small class="alert alert-warning alert-dismissible" style="display:none" id="pw_error" role="alert"></small>
+		</h4>
+      </div>
+      <div class="modal-body">
+        <form class="" role="search" id="password_form">
+			<div class="form-group">
+			  <label for="pw_old">{$user_pass_old}</label>
+			  <input type="password" class="form-control" name="pw_old" id="pw_old" placeholder="{$user_pass_old}" required autofocus>
+			</div>
+			<div class="form-group">
+			  <label for="pw_new">{$user_pass_new}</label>
+			  <input type="password" class="form-control pw_new" name="pw_new" id="pw_new" placeholder="{$user_pass_new_info}" required>
+			</div>
+			<div class="form-group">
+			  <label for="pw_conf">{$user_pass_confirm}</label>
+			  <input type="password" class="form-control pw_new" id="pw_conf" placeholder="{$user_pass_new_info}" required>
+			</div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="password_sub" class="btn btn-primary">{$user_confirm}</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">{$user_cancel}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="web/js/user/setting.js?v=100000"></script>
