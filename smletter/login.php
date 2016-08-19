@@ -28,6 +28,6 @@ $g_smarty->assign('rem_login_account', $account);
 $g_smarty->assign('lang_json', $lang_json);
 
 $g_smarty->display('login.html');
-
+//master 11
 ?>
 

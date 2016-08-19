@@ -7,6 +7,7 @@ $isLogout = $lm->logout();
 
 header('Location: '.PROJ_ROOT.'login.php?msg=logout');
 exit;
-
+// patch 2
+//b 2
 ?>
 
